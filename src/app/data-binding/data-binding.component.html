@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Data Binding</h1>
+  <hr />
+  <label>Username</label>
+  <input type="text" class="form-control" [(ngModel)]="username" />
+  <p>{{ username }}</p>
+  <button
+    class="btn btn-danger"
+    [disabled]="username === ''"
+    (click)="username = ''"
+  >
+    Reset User
+  </button>
+</div>
